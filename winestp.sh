@@ -23,9 +23,9 @@ wine regedit dpi.reg
 
 sudo apt install -y winetricks
 
-winetricks -q -v dxvk vcrun2008 vcrun2010 vcrun2012 vcrun2019 wmp9 directx9
+winetricks -q -v dxvk vcrun2008 vcrun2010 vcrun2012 vcrun2019 wmp10 directx9
 
-winetricks win10 vd=off unattended csmt=off glsl=disabled gsm=1 psm=0 vsm=1 multisampling=disabled
+winetricks win10 vd=off unattended csmt=on glsl=disabled gsm=1 psm=0 vsm=1 multisampling=disabled
 
 # ADD DRIVE
 

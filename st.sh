@@ -17,7 +17,7 @@ curl -L https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/winestp.sh
 xfconf-query -c xfce4-panel -p /panels/panel-1/size -t int -s 28
 
 ls /usr/share/themes/
-xfconf-query -c xfwm4 -p /general/theme -s "Default-xhdpi"
+xfconf-query -c xfwm4 -p /general/theme -s "Default-hdpi"
 
 xfconf-query -c xsettings -p /Gtk/FontConfig/TitleFontSize -s "12"
 

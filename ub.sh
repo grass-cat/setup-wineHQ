@@ -54,6 +54,6 @@ echo "exec fish" >> ~/.bashrc
 source ~/.bashrc
 clear
 ######
-DONE
+echo -e "\e[31mDone\e[0m"
 ######
 exec fish

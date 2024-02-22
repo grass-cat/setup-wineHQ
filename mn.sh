@@ -29,3 +29,6 @@ while true; do
             ;;
     esac
 done
+
+# 
+exec bash

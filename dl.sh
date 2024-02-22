@@ -12,5 +12,5 @@ exit
 
 #
 clear
-######s
+######
 echo "TYPE \"./mn\" TO RUN SCRIPT AGAIN."

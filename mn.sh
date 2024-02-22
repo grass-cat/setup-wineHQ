@@ -1,21 +1,26 @@
 #!/bin/bash
 
-echo "SETUP UBUNTU & WINE:"
+echo "SETUP MENU:"
 echo "1. SETUP UBUNTU ONLY"
 echo "2. SETUP UBUNTU & WINE"
 echo "3. SETUP UBUNTU & UPDATE WINE"
 
-read -p "CHOICE NUMBER (1 - 3): " option
+read -p "Enter your choice (1-3): " choice
 
-if [ $option -eq 1 ]; then
-    curl -L https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/ub.sh | source /dev/stdin
-    echo "SETUP UBUNTU"
-elif [ $option -eq 2 ]; then
-    curl -L https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/wi.sh | source /dev/stdin
-    echo "SETUP UBUNTU & WINE"
-elif [ $option -eq 3 ]; then
-    curl -L https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/wu.sh | source /dev/stdin
-    echo "SETUP UBUNTU & UPDATE WINE"
-else
-    echo "INVALID."
-fi
+case $choice in
+    1)
+        echo "You chose Option 1"
+        curl -L https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/ub.sh | bash
+        ;;
+    2)
+        echo "You chose Option 2"
+        curl -L https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/wi.sh | bash
+        ;;
+    3)
+        echo "You chose Option 3"
+       curl -L https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/wu.sh | bash
+        ;;
+    *)
+        echo "Invalid choice. Please select a number between 1 and 3."
+        ;;
+esac

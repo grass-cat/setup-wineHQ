@@ -25,6 +25,10 @@ ln -s "/home/user" dosdevices/d:
 # ADD LOCAL JP
 sudo apt-get install language-pack-ja -y
 
+# JP FONTS
+sudo apt-get install -y fonts-ipafont
+sudo apt install -y fonts-noto-cjk
+
 # ADD SHORTCUT
 # EXPLORER
 echo -e "[Desktop Entry]\nName=Explorer\nExec=env wine explorer.exe\nType=Application\nStartupNotify=true\nPath=/home/user/.wine/drive_c:/windows\nStartupWMClass=explorer.exe\nIcon=1CD8_rundll32.0\nComment=\nTerminal=false" > ~/Desktop/Explorer.desktop

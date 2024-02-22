@@ -11,5 +11,6 @@ x-terminal-emulator -e "bash ./mn"
 clear
 
 ######
-echo "TYPE \"./mn\" TO RUN SCRIPT AGAIN."
+echo -e "\e[31mTYPE \"./mn\" TO RUN SCRIPT AGAIN.\e[0m"
+######
 exit

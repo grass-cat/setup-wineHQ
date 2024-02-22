@@ -8,9 +8,8 @@ chmod +x mn
 
 # 
 x-terminal-emulator -e "bash ./mn"
-exit
-
-#
 clear
+
 ######
 echo "TYPE \"./mn\" TO RUN SCRIPT AGAIN."
+exit

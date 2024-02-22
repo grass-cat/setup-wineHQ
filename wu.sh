@@ -43,3 +43,6 @@ echo -e "[Desktop Entry]\nName=Chrome\nExec=/usr/bin/google-chrome-stable\nType=
 chmod +x ~/Desktop/Explorer.desktop
 chmod +x ~/Desktop/Explorer_JP.desktop
 chmod +x ~/Desktop/chrome.desktop
+
+#clear
+echo -e "\e[31mDone\e[0m"

@@ -17,7 +17,8 @@ unzip FONTSPACK
 mv Fonts .fonts
 
 # DEL
-rm FONTPACK
+cd
+rm FONTSPACK
 
 # FIX FONTS
 sudo apt-get install --reinstall --purge fontconfig fontconfig-config

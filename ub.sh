@@ -60,16 +60,4 @@ rm peazip_9.1.0.LINUX.GTK2-1_amd64.deb
 sudo apt-get clean
 sudo apt-get autoclean
 sudo apt-get autoremove
-
-# FISH
 sudo apt update
-sudo apt install -y fish
-# 
-echo "exec fish" >> ~/.bashrc
-source ~/.bashrc
-# 
-clear
-
-echo -e "\e[31mDone\e[0m"
-
-exec fish

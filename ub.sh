@@ -38,6 +38,7 @@ sudo apt -y autoremove
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt --fix-broken install -y
 
 # DEL DB
 cd
@@ -59,12 +60,14 @@ rm peazip_9.1.0.LINUX.GTK2-1_amd64.deb
 sudo apt-get clean
 sudo apt-get autoclean
 sudo apt-get autoremove
-sudo apt update
 
 # FISH
+sudo apt update
 sudo apt install -y fish
+# 
 echo "exec fish" >> ~/.bashrc
 source ~/.bashrc
+# 
 clear
 ######
 echo -e "\e[31mDone\e[0m"

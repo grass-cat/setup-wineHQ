@@ -22,6 +22,7 @@ rm FONTSPACK
 
 # FIX FONTS
 sudo apt-get install --reinstall --purge fontconfig fontconfig-config
+sudo apt update
 
 # CHANGE SIZE & THEME 
 xfconf-query -c xfce4-panel -p /panels/panel-1/size -t int -s 28
@@ -54,7 +55,7 @@ sudo dpkg -i peazip_9.1.0.LINUX.GTK2-1_amd64.deb
 cd
 rm peazip_9.1.0.LINUX.GTK2-1_amd64.deb
 
-#CLEAN
+# CLEAN
 sudo apt-get clean
 sudo apt-get autoclean
 sudo apt-get autoremove

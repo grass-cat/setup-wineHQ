@@ -3,8 +3,8 @@
 while true; do
     echo "SETUP UBUNTU & WINE:"
     echo "1. SETUP UBUNTU ONLY"
-    echo "2. SETUP UBUNTU & WINE"
-    echo "3. SETUP UBUNTU & UPDATE WINE"
+    echo "2. SETUP WINE"
+    echo "3. UPDATE WINE"
 
     read -p "CHOICE NUMBER (1 - 3): " option
 

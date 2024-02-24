@@ -14,20 +14,13 @@ rm dpi.reg
 # INSTALL WINETRICKS
 sudo apt install -y winetricks
 
-winetricks -q -v dxvk vcrun2008 vcrun2010 vcrun2019 wmp10 d3dx9 d3dx10
+winetricks -q -v dxvk vcrun2008 vcrun2010 vcrun2019 wmp10 d3dx9
 
 winetricks win10
 
 # ADD DRIVE
 cd .wine
 ln -s "/home/user" dosdevices/d:
-
-# ADD LOCAL JP
-sudo apt-get install language-pack-ja -y
-
-# JP FONTS
-sudo apt-get install -y fonts-ipafont
-sudo apt install -y fonts-noto-cjk
 
 # ADD SHORTCUT
 # EXPLORER

@@ -8,8 +8,20 @@ chmod +x mn
 
 # 
 x-terminal-emulator -e "bash ./mn"
-clear
 
+# FISH
+sudo apt update
+sudo apt-get install -y fish
+
+#
+echo "exec fish" >> ~/.bashrc
+source ~/.bashrc
+
+#
+echo -e "\e[31mDone\e[0m"
+exec fish
+
+clear
 ######
 echo -e "\e[33mTYPE \"./mn\" TO RUN SCRIPT AGAIN.\e[0m"
 ######

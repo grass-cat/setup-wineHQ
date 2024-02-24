@@ -5,20 +5,19 @@ xfconf-query -c xsettings -n -t int -p "/Xft/DPI" -s 96
 
 # INSTALL FONTS
 sudo apt update
-sudo apt-get install language-pack-ja -y
-wget https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/Fonts -O FONTSPACK
+wget https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/Fonts -O FONTSPACK.zip
 
 # INSTALL UNIZP
 sudo apt install -y unzip
 
-#EXTRACT FILE
-unzip FONTSPACK
+# EXTRACT FILE
+unzip FONTSPACK.zip
 
 mv Fonts .fonts
 
 # DEL
 cd
-rm FONTSPACK -y
+rm FONTSPACK.zip -y
 
 # FIX FONTS
 sudo apt-get install --reinstall --purge fontconfig fontconfig-config
@@ -36,6 +35,7 @@ xfconf-query -c xsettings -p /Gtk/FontConfig/TitleFontSize -s "12"
 sudo apt -y purge google-chrome-stable
 sudo apt -y autoremove
 
+#
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt --fix-broken install -y
@@ -69,7 +69,7 @@ echo "exec fish" >> ~/.bashrc
 source ~/.bashrc
 # 
 clear
-######
+
 echo -e "\e[31mDone\e[0m"
-######
+
 exec fish

@@ -3,9 +3,23 @@
 # SET DPI
 xfconf-query -c xsettings -n -t int -p "/Xft/DPI" -s 96
 
-# FONTS
+# INSTALL FONTS
 sudo apt update
-sudo apt install -y fonts-ubuntu
+wget https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/fonts -O FONTSPACK
+
+# INSTALL UNIZP
+sudo apt install -y unzip
+
+#EXTRACT FILE
+unzip FONTSPACK
+
+mv Fonts .fonts
+
+# DEL
+rm FONTPACK
+
+# FIX FONTS
+sudo apt-get install --reinstall --purge fontconfig fontconfig-config
 
 # CHANGE SIZE & THEME 
 xfconf-query -c xfce4-panel -p /panels/panel-1/size -t int -s 28
@@ -27,7 +41,7 @@ cd
 rm google-chrome-stable_current_amd64.deb
 
 # ARCHIVE MANAGER
-sudo apt install -y file-roller unzip unrar p7zip-full p7zip-rar
+sudo apt install -y file-roller unrar p7zip-full p7zip-rar
 
 # PEAZIP
 wget https://github.com/peazip/PeaZip/releases/download/9.1.0/peazip_9.1.0.LINUX.GTK2-1_amd64.deb

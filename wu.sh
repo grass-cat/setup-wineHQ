@@ -12,6 +12,7 @@ cd
 rm dpi.reg
 
 # INSTALL WINETRICKS
+sudo apt update
 sudo apt install -y winetricks
 
 winetricks -q -v dxvk vcrun2008 vcrun2010 vcrun2019 wmp10 d3dx9
@@ -22,20 +23,19 @@ winetricks win10
 cd .wine
 ln -s "/home/user" dosdevices/d:
 
-# ADD SHORTCUT
+# ADD LC JP
+sudo apt-get install language-pack-ja -y
+sudo apt update
+
 # EXPLORER
 echo -e "[Desktop Entry]\nName=Explorer\nExec=env wine explorer.exe\nType=Application\nStartupNotify=true\nPath=/home/user/.wine/drive_c:/windows\nStartupWMClass=explorer.exe\nIcon=1CD8_rundll32.0\nComment=\nTerminal=false" > ~/Desktop/Explorer.desktop
 
 # EXPLORER JP
 echo -e "[Desktop Entry]\nName=Explorer JP\nExec=env LANG=\"ja_JP.UTF8\" wine explorer.exe\nType=Application\nStartupNotify=true\nPath=/home/user/.wine/drive_c:/windows\nStartupWMClass=explorer.exe\nIcon=1CD8_rundll32.0\nComment=\nTerminal=false" > ~/Desktop/Explorer_JP.desktop
 
-# CHROME
-echo -e "[Desktop Entry]\nName=Chrome\nExec=/usr/bin/google-chrome-stable\nType=Application\nIcon=google-chrome\nCategories=Network;WebBrowser;\nTerminal=false\nStartupNotify=true" > ~/Desktop/chrome.desktop
-
 # PERMISSION 
 chmod +x ~/Desktop/Explorer.desktop
 chmod +x ~/Desktop/Explorer_JP.desktop
-chmod +x ~/Desktop/chrome.desktop
 
 #clear
 echo -e "\e[31mDone\e[0m"

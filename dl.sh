@@ -18,9 +18,10 @@ echo "exec fish" >> ~/.bashrc
 source ~/.bashrc
 
 #
-echo -e "\e[31mDone\e[0m"
 exec fish
 
+#
+echo -e "\e[31mDone\e[0m"
 clear
 ######
 echo -e "\033[1;32mTYPE \033[0m\033[1;33m./mn \033[0m\033[1;32mTO RUN SCRIPT AGAIN\033[0m"

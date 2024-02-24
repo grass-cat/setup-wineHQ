@@ -1,4 +1,5 @@
 #!/bin/bash
+# shellcheck disable=SC2140,SC2086
 
 cd
 wine --version

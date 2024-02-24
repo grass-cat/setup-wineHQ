@@ -11,17 +11,17 @@ while true; do
     case $option in
         1)
             echo "Running Option 1..."
-            curl -L https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/ub.sh | bash
+            curl -sSL https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/ub.sh | bash
             break
             ;;
         2)
             echo "Running Option 2..."
-            curl -L https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/wi.sh | bash
+            curl -sSL https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/wi.sh | bash
             break
             ;;
         3)
             echo "Running Option 3..."
-            curl -L https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/wu.sh | bash
+            curl -sSL https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/wu.sh | bash
             break
             ;;
         *)

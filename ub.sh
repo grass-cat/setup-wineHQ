@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # SET DPI
 xfconf-query -c xsettings -n -t int -p "/Xft/DPI" -s 96

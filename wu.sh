@@ -13,8 +13,7 @@ cd
 rm dpi.reg
 
 # INSTALL WINETRICKS
-sudo apt update
-sudo apt install -y winetricks
+sudo apt-get install winetricks -y
 
 winetricks -q -v dxvk vcrun2008 vcrun2010 vcrun2019 wmp10 d3dx9
 

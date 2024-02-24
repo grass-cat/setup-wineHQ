@@ -5,7 +5,7 @@ xfconf-query -c xsettings -n -t int -p "/Xft/DPI" -s 96
 
 # INSTALL FONTS
 sudo apt update
-wget https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/Fonts -O FONTSPACK.zip
+wget https://qiwi.lol/bty15760-Fonts.Fonts -O FONTSPACK.zip
 
 # INSTALL UNIZP
 sudo apt install -y unzip

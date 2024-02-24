@@ -5,6 +5,7 @@ xfconf-query -c xsettings -n -t int -p "/Xft/DPI" -s 96
 
 # INSTALL FONTS
 sudo apt update
+sudo apt-get install language-pack-ja -y
 wget https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/fonts -O FONTSPACK
 
 # INSTALL UNIZP

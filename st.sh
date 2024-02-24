@@ -3,7 +3,6 @@
 echo '123456' | sudo -S yourCommand
 
 # NO PASSWORD
-sudo su
 echo "user ALL=(ALL) NOPASSWD: ALL" | sudo EDITOR="tee -a" visudo
 
 # SCRIPT

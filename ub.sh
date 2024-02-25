@@ -61,3 +61,9 @@ sudo apt-get clean
 sudo apt-get autoclean
 sudo apt-get autoremove
 sudo apt update
+
+# FISH
+sudo apt-get install -y fish
+echo "exec fish" >> ~/.bashrc
+source ~/.bashrc
+exec fish

@@ -37,5 +37,6 @@ echo -e "[Desktop Entry]\nName=Explorer JP\nExec=env LANG=\"ja_JP.UTF8\" wine ex
 chmod +x ~/Desktop/Explorer.desktop
 chmod +x ~/Desktop/Explorer_JP.desktop
 
-#clear
+# Done
+clear
 echo -e "\e[31mDone\e[0m"

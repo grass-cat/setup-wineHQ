@@ -17,8 +17,9 @@ sudo apt-get install -y winetricks
 sudo apt-get install -y zenity
 wineserver -k
 
-winetricks --verbose vb6run physx vlc d3dx9 windowscodecs xvid
-winetricks win10
+winetricks --verbose vb6run physx d3dx9 windowscodecs ogg vlc
+
+winetricks win11
 
 # ADD DRIVE
 cd .wine

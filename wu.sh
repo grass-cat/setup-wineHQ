@@ -16,7 +16,7 @@ rm dpi.reg
 sudo apt-get install -y winetricks
 sudo apt-get install -y zenity
 
-winetricks --verbose physx qdvd vb6run wmp9 xvid d3dx9 quartz ogg
+winetricks --verbose physx qdvd vb6run wmp9 xvid d3dx9 ogg
 winetricks win7
 
 # ADD DRIVE

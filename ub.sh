@@ -44,10 +44,6 @@ sudo apt --fix-broken install -y
 cd
 rm google-chrome-stable_current_amd64.deb
 
-# ARCHIVE MANAGER
-sudo apt update
-sudo apt install -y file-roller unrar p7zip-full p7zip-rar
-
 # PEAZIP
 wget https://github.com/peazip/PeaZip/releases/download/9.1.0/peazip_9.1.0.LINUX.GTK2-1_amd64.deb
 sudo dpkg -i peazip_9.1.0.LINUX.GTK2-1_amd64.deb

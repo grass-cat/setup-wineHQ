@@ -13,10 +13,10 @@ cd
 rm dpi.reg
 
 # INSTALL WINETRICKS
-sudo apt-get install winetricks -y
+sudo apt-get install -y winetricks
+sudo apt-get install -y zenity
 
-winetricks -q -v vcrun2008 vcrun2010 vcrun2019 d3dx9 wmp10 qdvd qasf
-
+winetricks --verbose physx qdvd vb6run wmp9 xvid d3dx9 quartz ogg
 winetricks win7
 
 # ADD DRIVE

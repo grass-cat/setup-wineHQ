@@ -15,8 +15,8 @@ rm dpi.reg
 # INSTALL WINETRICKS
 sudo apt-get install -y winetricks
 sudo apt-get install -y zenity
-wineserver -k
 
+wineserver -k
 winetricks --verbose vb6run physx d3dx9 windowscodecs ogg vlc
 
 winetricks win11

@@ -15,7 +15,7 @@ rm dpi.reg
 # INSTALL WINETRICKS
 sudo apt-get install winetricks -y
 
-winetricks -q -v vcrun2008 vcrun2010 vcrun2019 d3dx9 wmp9
+winetricks -q -v vcrun2008 vcrun2010 vcrun2019 d3dx9 wmp9 qdvd qasf
 
 winetricks win7
 

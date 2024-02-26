@@ -15,9 +15,10 @@ rm dpi.reg
 # INSTALL WINETRICKS
 sudo apt-get install -y winetricks
 sudo apt-get install -y zenity
+wineserver -k
 
-winetricks --verbose vb6run physx wmp9 d3dx9 quartz ogg windowscodecs xvid
-winetricks win7
+winetricks --verbose vb6run physx vlc d3dx9 windowscodecs xvid
+winetricks win10
 
 # ADD DRIVE
 cd .wine
@@ -27,6 +28,7 @@ ln -s "/home/user/Downloads" dosdevices/d:
 # ADD LC JP
 sudo apt-get install language-pack-ja -y
 sudo apt update
+wineboot
 
 # EXPLORER
 echo -e "[Desktop Entry]\nName=Explorer\nExec=env wine explorer.exe\nType=Application\nStartupNotify=true\nPath=/home/user/.wine/drive_c:/windows\nStartupWMClass=explorer.exe\nIcon=1CD8_rundll32.0\nComment=\nTerminal=false" > ~/Desktop/Explorer.desktop

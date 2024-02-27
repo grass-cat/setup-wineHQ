@@ -54,8 +54,8 @@ rm peazip_9.1.0.LINUX.GTK2-1_amd64.deb
 
 # CLEAN
 sudo apt-get clean
-sudo apt-get autoclean
-sudo apt-get autoremove
+sudo apt-get autoclean -y
+sudo apt-get autoremove -y
 sudo apt update
 
 # Done

@@ -9,7 +9,7 @@ sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic ma
 wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
 
 sudo apt update
-sudo apt install wine32 -y
+sudo apt-get install wine32 -y
 
 # WINE UPDATE
 curl -sSL https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/wu.sh | bash

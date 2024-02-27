@@ -32,6 +32,12 @@ echo -e "[Desktop Entry]\nName=Explorer JP\nExec=env LANG=\"ja_JP.UTF8\" wine ex
 chmod +x ~/Desktop/Explorer.desktop
 chmod +x ~/Desktop/Explorer_JP.desktop
 
-# Done
+# CLEAN
+sudo apt-get clean
+sudo apt-get autoclean -y
+sudo apt-get autoremove -y
+sudo apt update
+
+# DONE
 clear
 echo -e "\e[31mDone\e[0m"

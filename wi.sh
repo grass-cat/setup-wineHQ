@@ -5,7 +5,7 @@
 sudo dpkg --add-architecture i386 
 sudo mkdir -pm755 /etc/apt/keyrings
 
-sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ jammy main'
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
 wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
 
 sudo apt update

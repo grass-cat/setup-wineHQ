@@ -17,6 +17,14 @@ cd .wine
 ln -s "/home/user" dosdevices/d:
 ln -s /home/user/Downloads/ ~/Desktop/Downloads
 
+# WINETRICKS
+cd
+wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+chmod +x winetricks
+sudo apt install -y zenity
+wineserver -k
+./winetricks alldlls=builtin vd=640x480 amstream devenum quartz
+
 # ADD LC JP
 sudo apt-get install language-pack-ja -y
 sudo apt update
@@ -32,6 +40,11 @@ echo -e "[Desktop Entry]\nName=Explorer JP\nExec=env LANG=\"ja_JP.UTF8\" wine ex
 chmod +x ~/Desktop/Explorer.desktop
 chmod +x ~/Desktop/Explorer_JP.desktop
 
+# APP
+cd
+wget https://downloads.xvid.com/downloads/Xvid-1.3.7-20191228.exe
+wget https://udomain.dl.sourceforge.net/project/ffdshow-tryout/Official%20releases/generic%20build%20%28stable%29/ffdshow_rev4531_20140628.exe
+wget https://qiwi.lol/m8zG7892-VisualCppRedistAIOx86x64.exe
 # CLEAN
 sudo apt-get clean
 sudo apt-get autoclean -y

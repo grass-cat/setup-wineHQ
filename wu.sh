@@ -14,8 +14,8 @@ rm dpi.reg
 
 # ADD DRIVE
 cd .wine
-ln -s "/home/user" dosdevices/u:
-ln -s "/home/user/Downloads" dosdevices/d:
+ln -s "/home/user" dosdevices/d:
+ln -s /home/user/Downloads/ ~/Desktop/Downloads
 
 # ADD LC JP
 sudo apt-get install language-pack-ja -y

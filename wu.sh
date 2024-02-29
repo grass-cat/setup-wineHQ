@@ -23,7 +23,7 @@ wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetri
 chmod +x winetricks
 sudo apt install -y zenity
 wineserver -k
-./winetricks alldlls=builtin vd=640x480 amstream devenum quartz
+./winetricks vd=700x650 unattended csmt=on glsl=disabled gsm=1 psm=0 vsm=1 multisampling=disabled devenum quartz wmp9 directx9
 
 # ADD LC JP
 sudo apt-get install language-pack-ja -y
@@ -42,9 +42,9 @@ chmod +x ~/Desktop/Explorer_JP.desktop
 
 # APP
 cd
-wget https://downloads.xvid.com/downloads/Xvid-1.3.7-20191228.exe
-wget https://udomain.dl.sourceforge.net/project/ffdshow-tryout/Official%20releases/generic%20build%20%28stable%29/ffdshow_rev4531_20140628.exe
-wget https://qiwi.lol/m8zG7892-VisualCppRedistAIOx86x64.exe
+wget https://sg1-dl.techpowerup.com/files/n7z_3HMAu8vHUOR6-fRd_A/1709216034/Visual-C-Runtimes-All-in-One-Feb-2024.zip
+wget https://www.xcodecpack.com/dl/X-Codec-Pack_2.7.4.exe
+
 # CLEAN
 sudo apt-get clean
 sudo apt-get autoclean -y

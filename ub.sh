@@ -52,6 +52,10 @@ sudo dpkg -i peazip_9.1.0.LINUX.GTK2-1_amd64.deb
 cd
 rm peazip_9.1.0.LINUX.GTK2-1_amd64.deb
 
+# PURGE
+sudo apt purge firefox -y
+sudo apt purge xzarchiver -y
+
 # CLEAN
 sudo apt-get clean
 sudo apt-get autoclean -y

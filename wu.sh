@@ -43,6 +43,7 @@ chmod +x ~/Desktop/Explorer_JP.desktop
 # APP
 cd
 wget https://sg1-dl.techpowerup.com/files/n7z_3HMAu8vHUOR6-fRd_A/1709216034/Visual-C-Runtimes-All-in-One-Feb-2024.zip
+
 wget https://www.xcodecpack.com/dl/X-Codec-Pack_2.7.4.exe
 
 # CLEAN

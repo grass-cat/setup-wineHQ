@@ -19,11 +19,10 @@ ln -s /home/user/Downloads/ ~/Desktop/Downloads
 
 # WINETRICKS
 cd
-wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
-chmod +x winetricks
+sudo apt-get install -y winetricks
 sudo apt install -y zenity
 wineserver -k
-./winetricks vd=700x650 unattended csmt=on glsl=enabled gsm=1 psm=1 vsm=1 orm=backbuffer renderer=gl alldlls=builtin devenum quartz wmp9 d3d9 dxvk
+winetricks vd=700x650 unattended csmt=on glsl=enabled gsm=1 psm=1 vsm=1 orm=backbuffer renderer=gl alldlls=builtin devenum quartz wmp9 d3d9 dxvk
 
 # ADD LC JP
 sudo apt-get install language-pack-ja -y

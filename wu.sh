@@ -23,7 +23,7 @@ wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetri
 chmod +x winetricks
 sudo apt install -y zenity
 wineserver -k
-./winetricks vd=700x650 unattended csmt=on glsl=disabled gsm=1 psm=0 vsm=1 multisampling=disabled devenum quartz wmp9 directx9
+./winetricks vd=700x650 unattended csmt=on glsl=disabled gsm=1 psm=0 vsm=1 orm=backbuffer renderer=gl alldlls=builtin multisampling=disabled devenum quartz wmp9 d3d9 dxvk
 
 # ADD LC JP
 sudo apt-get install language-pack-ja -y
@@ -42,7 +42,7 @@ chmod +x ~/Desktop/Explorer_JP.desktop
 
 # APP
 cd
-wget https://sg1-dl.techpowerup.com/files/n7z_3HMAu8vHUOR6-fRd_A/1709216034/Visual-C-Runtimes-All-in-One-Feb-2024.zip
+wget -O vc-all.zip https://sg1-dl.techpowerup.com/files/n7z_3HMAu8vHUOR6-fRd_A/1709216034/Visual-C-Runtimes-All-in-One-Feb-2024.zip
 
 wget https://www.xcodecpack.com/dl/X-Codec-Pack_2.7.4.exe
 

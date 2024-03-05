@@ -56,7 +56,7 @@ rm peazip_9.1.0.LINUX.GTK2-1_amd64.deb
 sudo apt purge firefox -y
 sudo apt purge xarchiver -y
 # PERMISSION
-chmod 777 /
+sudo chmod 777 /
 
 # CLEAN
 sudo apt-get clean

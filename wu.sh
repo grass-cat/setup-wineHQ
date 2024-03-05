@@ -22,12 +22,7 @@ cd
 sudo apt-get install -y winetricks
 sudo apt install -y zenity
 wineserver -k
-winetricks vd=700x650 unattended csmt=on glsl=enabled gsm=1 psm=1 vsm=1 orm=backbuffer renderer=gl alldlls=builtin devenum quartz wmp9 d3d9 dxvk
-
-#
-cd
-wget -O video.zip https://qiwi.lol/1kAT7993-video.zip
-unzip -o /home/user/video.zip -d /home/user/.wine/drive_c/windows/system32/
+winetricks vd=600x650 unattended csmt=on glsl=enabled gsm=1 psm=1 vsm=1 orm=backbuffer renderer=gl alldlls=builtin wmp9 d3d9 dxvk
 
 # ADD LC JP
 sudo apt-get install language-pack-ja -y

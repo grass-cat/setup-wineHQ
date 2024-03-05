@@ -3,9 +3,12 @@
 
 # INSTALL WINE
 sudo dpkg --add-architecture i386
-wget -qO- https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
-sudo apt-add-repository 'deb http://dl.winehq.org/wine-builds/ubuntu/ bionic main'
-sudo apt-get install wine32 -y
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+#
+sudo apt update 
+sudo apt install wine32 -y
 
 # WINE UPDATE
 curl -sSL https://raw.githubusercontent.com/grass-cat/setup-wineHQ/main/wu.sh | bash
